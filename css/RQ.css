@@ -1,0 +1,16 @@
+/* 隐藏面板的样式 */
+.RightQRCodePanel {
+  position: fixed; /* 固定在屏幕上 */
+  right: -10.5vw; /* 初始位置：右边隐藏在屏幕外 */
+  top: 40%; /* 垂直居中 */
+  transform: translateY(-50%); /* 垂直居中 */
+  width: 11.76vw; /* 面板宽度 */
+  height: 150px; /* 面板高度 */
+  transition: right 0.3s ease; /* 添加过渡效果 */
+  cursor: pointer; /* 鼠标悬停时显示手型 */
+}
+
+/* 鼠标悬停时面板左移 */
+.RightQRCodePanel:hover {
+  right: 0; /* 完全显示 */
+}

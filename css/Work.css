@@ -1,0 +1,44 @@
+.WorkMainContent{
+  position: absolute;
+  width: 54.25vw;  
+  height: 30.5vw;
+  left: 25vw;
+  z-index: 10;
+  transition: left 0.5s ease, width 0.5s ease;
+}
+
+.WorkMainContent.Left{
+  left: 17vw;
+  width: 37.77vw;
+  height: 21.2vw;
+  z-index: 9;
+}
+
+.WorkMainContent.Right{
+  left: 50vw;
+  width: 37.77vw;
+  height: 21.2vw;
+  z-index: 9;
+}
+
+.Work_nav-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 3.3vw;
+  height: 4.5vw;
+}
+
+#Work_prev-button {
+  left: 18vw;
+  background-image: url('../Images/File/Movie/MovieRightBtn.png');
+}
+
+#Work_next-button {
+  right: 13vw;
+  background-image: url('../Images/File/Movie/MovieLeftBtn.png');
+}

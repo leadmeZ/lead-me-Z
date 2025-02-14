@@ -1,0 +1,156 @@
+.FileScrollBtn-Container
+{
+  position: absolute;
+  left: 15.8%;
+  top: 17%;
+  height: 58%;
+  overflow: hidden;
+  width: 28.2%;
+}
+
+.FileScrollBtn-Container-In {
+  position: absolute;
+  top: -33%;
+  height: 100%;
+  width: 100%; 
+}
+
+.FileScrollBtn {
+  width: 100%;
+  height: 35%;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.FileScrollBtnImgContainer
+{
+  width: 100%;
+  height: 90%;
+}
+
+/*游戏界面*/
+.File_Game_Content {
+  position: relative;
+  width: 100%;
+  height: 120vw;
+  background-color: aqua;
+}
+
+/*游戏界面每张白色图片*/
+.GamePopup-trigger {
+  cursor: pointer;
+}
+
+/* 灰色背景层 */
+.GameOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明灰色 */
+  z-index: 10;
+}
+
+/* 灰色背景层 */
+.GameOverlay2 {
+  display: none;
+  position: fixed;
+  top: -30vh;
+  left: -10vw;
+  width: 210vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明灰色 */
+  z-index: 10;
+}
+
+/* 弹窗样式 */
+.FileGamePopUp {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 20;
+}
+
+/* 主包含框，其中中间部分站100%，两边各占35.547% */
+.FileModelContainer {
+  width: 167.97vw;
+  top: 12vh;
+  position: absolute;
+  transform: translateX(-35.547vw);
+  transition: transform 0.3s;
+}
+
+/* 左侧点击区域 */
+.FileModelLeft-Trigger{
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: -12vh;
+  left: 35vw;
+  cursor: pointer;
+}
+
+/* 右侧点击区域 */
+.FileModelRight-Trigger{
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: -12vh;
+  left: 85vw;
+  cursor: pointer;
+}
+
+/*周边界面横向按钮*/
+.FileModel-trigger {
+  cursor: pointer;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.MovieImgContainer{
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.Movie_nav-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#Movie_prev-button {
+  left: 10px;
+}
+
+#Movie_next-button {
+  right: 10px;
+}
+
+.Movie_nav-button.hidden {
+  display: none;
+}

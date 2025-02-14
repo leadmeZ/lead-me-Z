@@ -1,0 +1,45 @@
+.wrapper {
+  width: 85vw; /* 固定宽度 */
+  position: relative; /* 用于定位按钮 */
+  left: 10vw;
+  top: 1.6vw;
+}
+
+.container {
+  display: flex; /* 使用 flexbox 布局 */
+  flex-wrap: wrap; /* 允许换行 */
+  height: 45vw; /* 固定高度 */
+  overflow: hidden; /* 超出部分隐藏 */
+  padding: 10px; /* 内边距 */
+  box-sizing: border-box; /* 确保宽度包含 padding 和 border */
+}
+
+.item {
+  position: relative;
+  margin: 5px;
+  background-color: #f0f0f0;
+  text-align: center;
+  width: 25.54vw;
+  height: 14vw;
+}
+
+.scroll-button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: none;
+  text-align: center;
+  z-index: 10;
+}
+
+.top-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bottom-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

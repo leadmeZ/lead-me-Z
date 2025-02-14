@@ -1,0 +1,49 @@
+.carousel-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.item {
+  flex-shrink: 0; /* 防止 flex 压缩宽度 */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  height: 59.86vh;
+  margin: 0 2vw;
+  width: 60.31vw;
+}
+
+.nav-button {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 3.3vw;
+  height: 4.5vw;
+}
+
+#prev-button {
+  left: 1vw;
+  background-image: url('../Images/File/Movie/MovieRightBtn.png');
+}
+
+#next-button {
+  right: -18vw;
+  background-image: url('../Images/File/Movie/MovieLeftBtn.png');
+}
+
+.nav-button.hidden {
+  display: none;
+}

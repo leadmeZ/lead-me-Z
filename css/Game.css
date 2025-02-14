@@ -1,0 +1,52 @@
+.Game_carousel-container {
+    width: 60vw; /* 固定宽度 */
+    height: 83.26vh;
+    position: absolute;
+    overflow: hidden;
+    left: 20vw;
+  }
+  
+  .Game_carousel {
+    display: flex;
+    width: 10000px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .Game_item {
+    flex-shrink: 0; /* 防止 flex 压缩宽度 */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    height: 83.26vh;
+    width: 13.78vw;
+    margin: 0 10px;
+  }
+  
+  .Game_nav-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 3.3vw;
+    height: 4.5vw;
+  }
+  
+  #Game_prev-button {
+    left: 15vw;
+    background-image: url('../Images/File/Movie/MovieRightBtn.png');
+  }
+  
+  #Game_next-button {
+    right: 15vw;
+    background-image: url('../Images/File/Movie/MovieLeftBtn.png');
+  }
+  
+  .Game_nav-button.hidden {
+    display: none;
+  }
