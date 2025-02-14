@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>果桔</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Notice.css">
+    <link rel="stylesheet" href="css/File.css">
+    <link rel="stylesheet" href="css/Game.css">
+    <link rel="stylesheet" href="css/RQ.css">
+    <link rel="stylesheet" href="css/Work.css">
+</head>
+<body>
+    <!-- 左侧导航栏 -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#section1" class="nav-button active">公告</a></li>
+            <li><a href="#section2" class="nav-button">档案</a></li>
+            <li><a href="#section3" class="nav-button">佳品</a></li>
+            <li><a href="#section4" class="nav-button">果桔</a></li>
+            <li><a href="#section5" class="nav-button">尾页</a></li>
+        </ul>
+    </nav>
+    <!-- 页面部分 -->
+    <!--<h1>公告</h1>-->
+    <div class="section" id="section1">
+        <!--<h1>公告图片</h1>-->       
+        <img src="Images/Notice/Notice-title.png" alt="Image 1" style="width: 23.9%; position: absolute; top: 10%; left: 10.5%;"> 
+        <div class="noticeSlider">
+            <!-- 图片容器 -->
+            <div class="noticeSlider-wrapper">
+              <img src="Images/Notice/NoticeImg1.png" alt="Image 1">
+              <img src="Images/Notice/NoticeImg2.png" alt="Image 2">
+              <img src="Images/Notice/NoticeImg3.png" alt="Image 3">
+            </div>
+        </div>
+
+            <!-- 指示器容器 -->
+        <div class="noticeIndicator-container">
+            <div class="noticeIndicator"></div>
+            <div class="noticeIndicator"></div>
+            <div class="noticeIndicator"></div>
+        </div>
+
+        <!--<h1>左边的图片显示</h1>-->
+        <div class="section-noticeImg">
+        </div>
+        <!--<h1>右边的文字和图片显示</h1>-->
+        <div class="section-noticeText">
+
+            <button class="Noticebtn-New"></button>
+            <button class="Noticebtn-Community"></button>
+            <img src="Images/Notice/NoticeTextBg.png" style="position: relative; top: 30%; left: 0%; width: 100%;">
+            <div class="section-noticeText-Text" id="Notice-New">
+                <p style="font-size: 2vw;">最新内容：这是最新内容<br>345365</p>
+                <a href="Notice.html" rel="noopener noreferrer" style="color: aqua; font-size: 2vw;">最新内容跳转</a>
+            </div>
+            <div class="section-noticeText-Text" id="Notice-Community">
+                <p style="font-size: 2vw;">社区内容：这是社区内容<br>345365</p>
+                <a href="Notice.html" rel="noopener noreferrer" style="color: aqua; font-size: 2vw;">社区内容跳转</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--<h1>档案</h1>-->
+    <div class="section" id="section2">
+        <!--<h1>档案图片</h1>-->       
+        <img src="Images/File/FileTitle.png" style="width: 31.9%; position: absolute; top: 10%; left: 10.5%;"> 
+        <img src="Images/File/FileTitle4.png"  style="width: 1.36%; position: absolute; top: 64%; left: 14%;"> 
+
+        <!--<h1>左侧滚动按钮框</h1>-->
+        <div class="FileScrollBtn-Container">
+            <div class="FileScrollBtn-Container-In">
+              <div class="FileScrollBtn">
+                <div class="FileScrollBtnImgContainer">
+                    <img src="Images/File/FileCrollBtnImg1.png"  style="height: 100%; "> 
+                </div>
+              </div>
+              <div class="FileScrollBtn">
+                <div class="FileScrollBtnImgContainer">
+                    <img src="Images/File/FileCrollBtnImg2.png"  style="height: 100%; "> 
+                </div>
+              </div>
+              <div class="FileScrollBtn">
+                <div class="FileScrollBtnImgContainer">
+                    <img src="Images/File/FileCrollBtnImg3.png"  style="height: 100%; "> 
+                </div>
+              </div>
+              <div class="FileScrollBtn">
+                <div class="FileScrollBtnImgContainer">
+                    <img src="Images/File/FileCrollBtnImg4.png"  style="height: 100%; "> 
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--<h1>右侧显示超链接大图</h1>-->
+        <img id="FileImage" src="Images/File/FileImg4.png" style="width: 39.14%; position: absolute; top: 25%; left: 48%;" onclick="IntoFilePage()">
+    </div>
+
+
+    <!--<h1>佳品</h1>-->
+    <div class="section" id="section3">
+        <img src="Images/Game/Title.png" style="width: 19.61%; position: absolute; top: 10%; left: 10.5%;"> 
+
+        <button class="Game_nav-button" id="Game_prev-button"></button>
+
+        <div class="Game_carousel-container">
+            <div class="Game_carousel">
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+                <div class="Game_item">
+                    <!-- 背景图-->         
+                    <img src="Images/Game/GameItemBg.png" style="position: absolute;height: 83.26vh; z-index: 5;">   
+
+                    <div class="GameItemMask" style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 10;">
+                        <img src="Images/Game/GameLock.png" style="position: relative; width: 11vw; left: 1.2vw; top: 25vh;">   
+                        <img src="Images/Game/GameItemBtn.png" class="GameItemBtn" style="position: relative; width: 10.74vw; top: 50vh; left: 1.5vw; cursor: pointer;">   
+                    </div>
+                    <div class="GameItemContent" style="position: relative;z-index: 11; display: none; width: 12vw; height: 83.26vh;">
+                        <p style="color: aqua;">名字</p>
+                        <p style="color: aqua;">简介</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="Game_nav-button" id="Game_next-button"></button>
+
+    </div>
+
+    <!--<h1>果桔</h1>-->
+    <div class="section" id="section4">
+
+        <div class="WorkMainContent">
+            <img src="Images/Work/MainImg1.png" style="width: 100%;">   
+        </div>
+        
+        <div class="WorkMainContent">
+            <img src="Images/Work/MainImg2.png" style="width: 100%;">   
+        </div>
+        
+        <div class="WorkMainContent">
+            <img src="Images/Work/MainImg3.png" style="width: 100%;">   
+        </div>
+
+        <div class="Work_nav-button" id="Work_prev-button"></div>
+        <div class="Work_nav-button" id="Work_next-button"></div>
+
+    </div>
+
+    <!--<h1>尾页</h1>-->
+    <div class="section" id="section5">
+        <img src="Images/BackGround_End.png" style="height: 100vh; width: 100vw;position: absolute;"> 
+        <img src="Images/BackGround_End_Bottom.png" class="EndBottom"> 
+    </div>
+    <!--<h1>右侧二维码菜单</h1>-->
+    <div class="RightQRCodePanel">
+        <img src="Images/RightRQPanel/BG.png" style="position: relative; width: 11.76vw;">  
+        <img src="Images/RightRQPanel/RQ.png" style="position: relative; width: 7vw; top: -14.5vw; left: 3vw;">   
+    </div>
+
+    <script src="js/TestJs2.js"></script>
+    <script src="js/Notice.js"></script>
+    <script src="js/File.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/RQ.js"></script>
+    <script src="js/Work.js"></script>
+</body>
+</html>
