@@ -30,17 +30,20 @@ function scrollToItem() {
 }
 
 const GameItemBtns = document.querySelectorAll('.GameItemBtn');
+const GameItemMaskImgs = document.querySelectorAll('.GameItemMaskImg');
 const GameItemMasks = document.querySelectorAll('.GameItemMask');
 const GameItemContents = document.querySelectorAll('.GameItemContent');
 
 const GameBtnArray = Array.from(GameItemBtns);
+const GameMaskImgArray = Array.from(GameItemMaskImgs);
 const GameMaskArray = Array.from(GameItemMasks);
 const GameContentArray = Array.from(GameItemContents);
 
 GameItemBtns.forEach(btn=>{
     btn.addEventListener('click',function(){
         const BtnIndex = GameBtnArray.indexOf(btn);
-        GameMaskArray[BtnIndex].style.display = 'none'; // 显示弹窗
+        GameMaskArray[BtnIndex].style.display = 'none'; // 关闭Mask
+        GameItemMaskImgs[BtnIndex].style.display = 'none'; // 关闭Mask
         GameContentArray[BtnIndex].style.display = 'block'; // 显示弹窗
     })
 })
